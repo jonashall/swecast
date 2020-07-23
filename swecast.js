@@ -246,10 +246,12 @@ if (!window.SweCast) {
 		  	if (this.requestUrl.indexOf('HTML:') === 0) {
 		  		this.appId = '02893205';
 		  	}
-		  	if (this.noCast === true) {
+		  	/*if (this.noCast === true) {
 		  		this.logVideo(url);
 		  		window.location.href = url;
-		  	} else if (this.session) {
+				return;
+		  	}*/
+			if (this.session) {
 				this.loadVideo();
 			} else {
 				this.requestSession();
