@@ -635,7 +635,8 @@ if (!window.SweCast) {
 				width: '100%',
 				visibility: 'visible',
         opacity: 1,
-				textAlign: 'left'
+				textAlign: 'left',
+				display: 'block !important'
 			})
 			.wrap('<div>').parent()
 			.css({
