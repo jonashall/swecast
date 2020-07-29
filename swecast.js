@@ -630,16 +630,7 @@ if (!window.SweCast) {
 				fn.call();
 			})
 			.wrap('<div>').parent()
-			.css({
-				position: 'relative',
-				zIndex: 99998,
-				backgroundColor: '#000',
-				width: '100%',
-				visibility: 'visible',
-        opacity: 1,
-				textAlign: 'left',
-				display: 'block !important'
-			})
+			.attr('style', 'position: relative; z-index: 99998; background-color: rgb(0, 0, 0); width: 100%; visibility: visible; opacity: 1; text-align: left; display: block !important;')
 			.wrap('<div>').parent()
 			.css({
 				width: el.width() || '100%',
